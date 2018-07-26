@@ -7,7 +7,7 @@ document.getElementById("happen").onclick = function() {
   var i = 5;
   var interval = setInterval(function() {
     document.body.innerHTML += "<p>" + i-- + "...</p>";
-    if (i > 1) {
+    if (i > 0) {
       return;
     }
     clearInterval(interval);
