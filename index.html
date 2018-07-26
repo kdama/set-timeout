@@ -1,6 +1,6 @@
 <html>
 <body>
-  <button id="happen">happen</button>
+<button id="happen">happen</button>
 <script>
 document.getElementById("happen").onclick = function() {
   document.body.innerHTML += "<p>Clicked on " + new Date() + "</p>";
@@ -13,7 +13,7 @@ document.getElementById("happen").onclick = function() {
     clearInterval(interval);
     setTimeout(function() {
       document.body.innerHTML += "<p>Happened on " + new Date() + "</p>";
-    }, 1000 * i);
+    }, 1000);
   }, 1000);
 };
 </script>
